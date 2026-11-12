@@ -4,7 +4,7 @@
 Computer Vision on edge devices for factory lines, and LLM applications (RAG, agents, fine-tuning).
 
 - 🏭 Machine Learning Engineer @ **Greystone Data Systems Vietnam** — detection models running 24/7 on device-manufacturing and phone-inspection lines
-- 🔭 Currently working on: **LLM safety** (prompt injection, guardrails) and **RAG evaluation**
+- 🔭 Currently working on: **RAG evaluation & MLOps**: retrieval benchmarks on UIT-ViQuAD 2.0 tracked in MLflow, CI with GitHub Actions
 - 📄 2 peer-reviewed publications (Elsevier *Data in Brief*, *CTU Journal*)
 - 📫 lamtanduy1605@gmail.com · [LinkedIn](https://www.linkedin.com/in/duy-l%C3%A2m-9b45a3234/)
 
@@ -16,14 +16,14 @@ Computer Vision on edge devices for factory lines, and LLM applications (RAG, ag
 |---|---|---|
 | 🤖 [**Vietnamese Agentic RAG**](https://github.com/lmtndy/vietnamese-agentic-rag) | Q&A over Vietnamese documents with source citations. A LangGraph agent routes each query, grades retrieved context and rewrites the query when retrieval fails. | LangGraph · Qdrant · Cross-encoder rerank · FastAPI |
 | 🔧 [**Qwen2.5 QLoRA Fine-tuning**](https://github.com/lmtndy/qwen-qlora-vietnamese) | QLoRA fine-tuning of Qwen2.5-1.5B for Vietnamese text classification on a single 11 GB GPU, with a synthetic-data generator. Adapter: 20 MB. | PEFT · TRL · bitsandbytes |
-| 🔥 [**Real-time Fire Detection**](https://github.com/lmtndy/Real-time-fire-detection) | Fire & smoke detection trained on 36.5k labeled images; triggers an ESP32 alarm and sends Telegram alerts. | YOLOv8 · OpenCV · ESP32 |
+| 🔥 [**Real-time Fire Detection**](https://github.com/lmtndy/Real-time-fire-detection) | Team course project: fire & smoke detection with YOLOv8n trained on 21.5k images (mAP@50 0.788, 1.9 ms inference per image on a T4). | YOLOv8 · OpenCV |
 | 🚗 [**Wrong-direction Vehicle Detection**](https://github.com/lmtndy/detectCarWrongDirection) | Detects and tracks wrong-way vehicles across multiple lanes. | YOLOv11 · SAM · Supervision |
 | ⚡ [**SAM 2 → OpenVINO**](https://github.com/lmtndy/sam2_project) | Exports the SAM 2 image encoder and mask decoder to OpenVINO IR for CPU inference. | SAM 2 · OpenVINO |
 
 ### 🏭 Industrial work (closed source)
 - Real-time detection for fixture / device-presence checks on manufacturing lines; misposition detection that triggers an automatic robot retry
 - Upgraded a phone-inspection system to **RF-DETR + Grounding DINO** (open-vocabulary detection)
-- AIoT defect detection with **YOLO + TensorRT** on **Jetson Orin** (4 industrial cameras) and ESP32 alarms
+- AIoT defect detection with **YOLOv7/YOLOv10 + TensorRT** (ESP32 alarms, Telegram alerts); dust/hair detection for a pharmaceutical line with **YOLOX + TensorRT** on **Jetson Orin** (4 Basler cameras)
 
 ---
 
